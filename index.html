@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do app</title>
+    <style>
+        body {
+            font-size: 24px;
+            background-image: url("todo.jpg")
+        }
+
+        input {
+            width: 200px;
+            height: 25px;
+            font-size: 18px;
+        }
+
+        .btn {
+            margin-left: 20px;
+            background-color: rgb(129, 20, 20);
+            background-color: rgb(26, 60, 134);
+            height: 30px;
+            width: 100px;
+        }
+
+        .bt {
+            background-color: rgb(26, 60, 134);
+            background-color: rgb(129, 20, 20);
+            height: 30px;
+            width: 100px;
+        }
+
+        li {
+            border: 2px solid grey;
+        }
+
+        .box {
+
+
+
+            margin-left: 200px;
+
+            margin-top: 200px;
+        }
+
+        p {
+            font-size: 26px;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .box {
+                margin-left: 100px;
+            
+            }
+        }
+        @media only screen and (max-width: 550px) {
+            input {
+            width: 280px;
+            height: 25px;
+            font-size: 18px;
+        }
+            .box {
+                margin-left:10px;
+            
+            }
+            .btn {
+            margin-left: 0px;
+            background-color: rgb(129, 20, 20);
+            background-color: rgb(26, 60, 134);
+            height: 20px;
+            width: 50px;
+        }
+        p {
+            font-size: 16px;
+        }
+        }
+        @media only screen and (max-width: 400px) {
+            .box {
+                margin-left:40px;
+            
+            }
+            .btn {
+            margin-left: 0px;
+            background-color: rgb(129, 20, 20);
+            background-color: rgb(26, 60, 134);
+            height: 20px;
+            width: 50px;
+        }
+        .bt {
+            background-color: rgb(26, 60, 134);
+            background-color: rgb(129, 20, 20);
+            height: 30px;
+            width: 100px;
+        }
+        p {
+            font-size: 16px;
+        }
+        }
+        @media only screen and (max-width: 300px) {
+            input {
+            width: 320px;
+            height: 25px;
+            font-size: 18px;
+        }
+            .box {
+                margin-left:40px;
+            
+            }
+            .btn {
+            margin-left: 0px;
+            background-color: rgb(129, 20, 20);
+            background-color: rgb(26, 60, 134);
+            height: 20px;
+            width: 50px;
+        }
+        .bt {
+            background-color: rgb(26, 60, 134);
+            background-color: rgb(129, 20, 20);
+            height: 30px;
+            width: 100px;
+        }
+        p {
+            font-size: 16px;
+        }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="container">
+            <input type="text" id="value" placeholder="Enter your items">
+
+            <button onclick="add()" class="bt">ADD ITEM</button>
+            <button onclick="dele()" class="bt">DELETE ALL</button>
+        </div>
+        <div>
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
